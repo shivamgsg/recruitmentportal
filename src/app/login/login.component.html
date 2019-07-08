@@ -1,0 +1,25 @@
+<div class="row" >
+  <div class="col-sm-6" style="border-right: 1px dashed #333;">
+      <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" name=email [(ngModel)]="email" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" name=password [(ngModel)]="password" placeholder="Password">
+          </div>
+          <div class="form-group text-center">
+          <button type="submit" (click)=checkLogin()  class="btn btn-primary">Submit</button>
+        </div>
+        </form>
+
+  </div>
+
+  <div class="col-sm-6 text-center">
+      <button type="button" routerLink="/Signup"  class="btn btn-primary btn-lg">Sign Up</button>
+  </div>
+</div>
+
+
